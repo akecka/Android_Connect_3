@@ -11,9 +11,15 @@ public class MainActivity extends AppCompatActivity {
 
     int activePlayer = 0;
 
+    //2 means unplayed;
+
+    int[] gameState = {2,2,2,2,2,2,2,2,2};
+
     public void dropin(View view) {
 
         ImageView counter = (ImageView) view;
+
+        System.out.println(counter.getTag().toString());
 
         counter.setTranslationY(-1000f);
 
